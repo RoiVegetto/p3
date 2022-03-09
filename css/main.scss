@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header i {
+    font-size: 22px;
+    position: absolute;
+    padding-right: 80%;
+}
+
+.logo {
+    width: 188px;
+}
+
+.localisation {
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2) ;
+}
+
+.localisation p {
+    margin: 15px 20px;
+    font-weight: bold;
+}
+
+.top {
+    background: #f7f7f7;
+    height: 290px;
+}
+
+.title {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 40px 10% 5px 10%;
+}
+
+.title-p {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.explore {
+    display: block;
+    margin: 30px auto;
+    font-size: 15px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(
+        to top,
+        #9356dc,
+        #FF79DA
+    );
+    text-decoration-color: white;
+    box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
+    color: white;
+}
+
+.select {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+
+.select h2 {
+    font-size: 24px;
+    margin: 40px 10px 20px 0px;
+}
+
+.select button {
+    width: 100%;
+    border: none;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    height: 72px;
+    box-shadow: 2px 5px 5px  rgba(80, 80, 80, 0.12);
+    background-color: #f7f7f7;
+}
+
+.select--button__number {
+    color: white;
+    background: #9356dc;
+    border-radius: 100px;
+    padding: 5px;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 10px -15px;
+}
+
+.select--button i {
+    color: grey;
+    font-size: 18px;
+}
+
+.select--button:last-child i {
+    color: #9356dc;
+}
+
+.select--button:last-child {
+    background-color: #9256dc17;
+}
+
+.select--button__text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.container {
+    background: #f7f7f7;
+    margin: auto;
+    height: 1230px;
+}
+
+.container h2 {
+    margin: 0px 0px 10px 5%;
+    padding-top: 55px;
+}
+
+.container--card {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    position: relative;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.container--card img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 70%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container--card__new {
+    position: absolute;
+    margin: 15px 0px 0px 70%;
+    background: #99E2D0;
+    color: #00956f;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.container--card__title {
+    margin: 10px 0px 5px 10px;
+    font-weight: bold;
+}
+
+.container--card__text {
+    margin: 0px 0px 10px 10px;
+}
+
+.container--card i {
+    position: absolute;
+    margin: -45px 0px 0px 85%;
+    font-size: 25px;
+}
+
+footer {
+    color: white;
+    background: rgb(54, 54, 54);
+
+}
+
+.footer--logo {
+    color: white;
+    width: 35%;
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    padding: 25px 0px 20px 5%;
+    font-size: 20px;
+}
+
+.footer--ul {
+    margin: 0px 0px 0px 5%;
+    padding: 0 0 25px 0;
+}
+
+.footer--ul__li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.footer--ul__li i {
+    margin-right: 10px;
+    min-width: 15px;
+    max-width: 15px;
+    max-height: 15px;
+}
+
+
+/****************/
+
+
+main img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.containers {
+    padding-top: 10px;
+    background: #f7f7f7;
+    border-radius: 45px 45px 0 0;
+    position: relative;
+    margin-top: -45px;
+    padding-bottom: 20px;
+}
+
+.containers--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containers--title h1 {
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.containers--title i {
+    font-size: 25px;
+}
+
+.containers h2 {
+    font-size: 18px;
+    border-bottom: solid 3px #99E2D0;
+    width: 45px;
+    margin: 10px 0 0 20px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+
+.containers--cards {
+    background: white;
+    width: 93%;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+}
+
+.containers--cards__title {
+    margin: 12px 0 0px 10px;
+    font-size: 18px;
+}
+
+.containers--cards__text {
+    margin: 5px 0 12px 10px;
+    font-size: 15px;
+}
+
+.containers--cards__price {
+    position: absolute;
+    margin: 38px 0 0 82%;
+    font-weight: bold;
+}
+
+.order {
+    display: block;
+    margin: 40px auto;
+    font-size: 17px;
+    padding: 16px 42px;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(
+        to top,
+        #9356dc,
+        #FF79DA
+    );
+    text-decoration-color: white;
+    box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
+    color: white;
+}
