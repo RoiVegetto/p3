@@ -69,6 +69,11 @@ header i {
   color: white;
 }
 
+.explore:hover {
+  box-shadow: 5px 5px 3px rgba(80, 80, 80, 0.2);
+  background-image: linear-gradient(to top, #a561f8, #ffaee8);
+}
+
 .select {
   width: 90%;
   margin: auto;
@@ -82,7 +87,7 @@ header i {
   margin: 40px 10px 20px 0px;
 }
 
-.select button {
+.select--button {
   width: 100%;
   border: none;
   margin: 10px auto;
@@ -90,8 +95,13 @@ header i {
   align-items: center;
   border-radius: 22px;
   height: 72px;
-  box-shadow: 2px 5px 5px rgba(80, 80, 80, 0.12);
-  background-color: #f7f7f7;
+  box-shadow: 2px 3px 5px rgba(80, 80, 80, 0.12);
+  background: #f7f7f7;
+}
+
+.select--button:hover {
+  background: #fafafa;
+  box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
 }
 
 .select--button__number {
@@ -117,7 +127,11 @@ header i {
 }
 
 .select--button:last-child {
-  background-color: #9256dc17;
+  background: #9256dc17;
+}
+
+.select--button:last-child:hover {
+  background: #a86cf117;
 }
 
 .select--button__text {
@@ -144,6 +158,7 @@ header i {
   position: relative;
   height: 250px;
   border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.2);
 }
 
 .container--card img {
@@ -212,6 +227,8 @@ footer {
 }
 
 /****************/
+
+
 main img {
   width: 100%;
   object-fit: cover;
@@ -265,11 +282,17 @@ main img {
 .containers--cards__title {
   margin: 12px 0 0px 10px;
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .containers--cards__text {
   margin: 5px 0 12px 10px;
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .containers--cards__price {
@@ -289,6 +312,11 @@ main img {
   text-decoration-color: white;
   box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
   color: white;
+}
+
+.order:hover {
+  box-shadow: 5px 5px 3px rgba(80, 80, 80, 0.2);
+  background-image: linear-gradient(to top, #a561f8, #ffaee8);
 }
 
 /*# sourceMappingURL=style.css.map */
