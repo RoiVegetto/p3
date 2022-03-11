@@ -74,6 +74,11 @@ header i {
   background-image: linear-gradient(to top, #a561f8, #ffaee8);
 }
 
+.explore:active {
+  box-shadow: inset 5px 5px 4px rgba(80, 80, 80, 0.2),
+              2px 2px 5px rgba(80, 80, 80, 0.2);
+}
+
 .select {
   width: 90%;
   margin: auto;
@@ -102,6 +107,10 @@ header i {
 .select--button:hover {
   background: #fafafa;
   box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
+}
+
+.select--button:active {
+  box-shadow: inset 4px 4px 4px rgba(80, 80, 80, 0.2);
 }
 
 .select--button__number {
@@ -161,6 +170,14 @@ header i {
   box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.2);
 }
 
+.container--card:hover {
+  box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.2);
+}
+
+.container--card:active {
+  width: 88%;
+}
+
 .container--card img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -189,10 +206,19 @@ header i {
   margin: 0px 0px 10px 10px;
 }
 
-.container--card i {
+.fa-heart-o {
   position: absolute;
-  margin: -45px 0px 0px 85%;
+  margin: -45px 0 0 80%;
   font-size: 25px;
+}
+
+.fa-heart-o:active {
+  from {
+    background-color: white;
+  }
+  to {
+  background-color: linear-gradient(to bottom, #a561f8, #ffaee8);
+  }
 }
 
 footer {
