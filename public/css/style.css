@@ -5,16 +5,17 @@ body {
 }
 
 header {
-  display: flex;
   margin: 20px 0 10px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-header i {
+.return {
   font-size: 22px;
   position: absolute;
-  padding-right: 80%;
+  left: 20px;
 }
 
 .logo {
@@ -67,6 +68,12 @@ header i {
   text-decoration-color: white;
   box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
   color: white;
+  cursor: pointer;
+}
+
+.explore--clic {
+  text-decoration: none;
+  color: white;
 }
 
 .explore:hover {
@@ -95,13 +102,14 @@ header i {
 .select--button {
   width: 100%;
   border: none;
-  margin: 10px auto;
+  margin: 25px auto;
   display: flex;
   align-items: center;
   border-radius: 22px;
   height: 72px;
   box-shadow: 2px 3px 5px rgba(80, 80, 80, 0.12);
   background: #f7f7f7;
+  cursor: pointer;
 }
 
 .select--button:hover {
@@ -170,11 +178,17 @@ header i {
   box-shadow: 3px 3px 3px rgba(80, 80, 80, 0.2);
 }
 
+.container--card__clic {
+  text-decoration: none;
+  color: black;
+}
+
 .container--card:hover {
   box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.2);
 }
 
 .container--card:active {
+  box-shadow: inset 4px 5px 4px rgba(80, 80, 80, 0.2);
   width: 88%;
 }
 
@@ -212,12 +226,24 @@ header i {
   font-size: 25px;
 }
 
-.fa-heart-o:active {
-  from {
-    background-color: white;
+.fa-heart-o:hover {
+    animation: heart 2000ms ease forwards;
+    cursor: pointer;
+}
+
+@keyframes heart {
+  0% {
+    font-weight: 800;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.1;
   }
-  to {
-  background-color: linear-gradient(to bottom, #a561f8, #ffaee8);
+  100% {
+    font-weight: 800;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -252,7 +278,7 @@ footer {
   max-height: 15px;
 }
 
-/****************/
+/**************** CSS index fini *****************/
 
 
 main img {
@@ -303,6 +329,16 @@ main img {
   box-shadow: 2px 2px 5px #dfdfdf;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.containers--cards:hover {
+  background-color: white;
+  box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
+}
+
+.containers--cards:active {
+  box-shadow: inset 4px 4px 4px rgba(80, 80, 80, 0.2);
 }
 
 .containers--cards__title {
@@ -338,11 +374,116 @@ main img {
   text-decoration-color: white;
   box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
   color: white;
+  cursor: pointer;
 }
 
 .order:hover {
   box-shadow: 5px 5px 3px rgba(80, 80, 80, 0.2);
   background-image: linear-gradient(to top, #a561f8, #ffaee8);
+}
+
+/**************** MEDIA *****************/
+
+@media screen and (min-width:578px) {
+  .top {
+    height: 220px;
+  }  
+}
+
+@media screen and (min-width:1024px) {
+  .select {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+  }
+
+  .select--buttons {
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .select--button {
+    width: 30%;
+  }
+
+  .select h2 {
+    margin: 40px auto 20px auto;
+  }
+
+  .container {
+    height: 800px;
+  }
+
+  .container h2 {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    padding: 40px;
+  }
+
+
+  .container--card {
+    width: 45%;
+  }
+
+  .container--cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container--card:active {
+    box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.2);
+    width: 48%;
+    height: 260px;
+  }
+  
+  .footer--logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 20px 0;
+    width: auto;
+  }
+
+  .footer--ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer--ul__li {
+    padding-bottom: 10px;
+  }
+
+/************************ media autre page****************************/
+
+main img {
+  max-height: 400px;
+}
+
+.containers h2 {
+  margin: auto;
+  width: 120px;
+}
+
+.containers--cards__price {
+  margin: 38px 0 0 25%;
+}
+
+.containers--pack {
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+.containers--cards {
+  width: 30%;
+}
+
 }
 
 /*# sourceMappingURL=style.css.map */
