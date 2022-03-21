@@ -22,7 +22,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: -1;
-  animation: time 4s forwards;
+  animation: time 2.5s forwards;
   opacity: 1;
 }
 
@@ -32,7 +32,7 @@ header {
     z-index: 3;
   }
 
-  80% {
+  90% {
     opacity: 1;
     z-index: 3;
   }
@@ -44,7 +44,7 @@ header {
 
 .lettre {
   color: #9356dc;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 10px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
@@ -279,7 +279,7 @@ header {
   margin: 0px 0px 10px 10px;
 }
 
-.fa-heart-o {
+.container--card i {
   position: absolute;
   margin: -45px 0 0 80%;
   font-size: 25px;
@@ -363,7 +363,8 @@ main img {
 .containers--title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 3.5% ;
 }
 
 .containers--title h1 {
@@ -380,7 +381,7 @@ main img {
   font-size: 18px;
   border-bottom: solid 3px #99E2D0;
   width: 45px;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 3.5%;
   font-weight: 100;
   padding-bottom: 5px;
 }
@@ -394,15 +395,24 @@ main img {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  animation: apparition 2s ease-out forwards;
+  animation: apparition 4s ease-out forwards;
 }
 
 @keyframes apparition {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(30px);
   }
-  to {
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -413,39 +423,39 @@ main img {
 }
 
 .containers--cards:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.containers--cards:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.containers--cards:nth-child(4) {
   animation-delay: 0.4s;
 }
 
-.containers--cards:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.containers--cards:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.containers--cards:nth-child(7) {
+.containers--cards:nth-child(3) {
   animation-delay: 0.7s;
 }
 
+.containers--cards:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.containers--cards:nth-child(5) {
+  animation-delay: 1.3s;
+}
+
+.containers--cards:nth-child(6) {
+  animation-delay: 1.6s;
+}
+
+.containers--cards:nth-child(7) {
+  animation-delay: 1.9s;
+}
+
 .containers--cards:nth-child(8) {
-  animation-delay: 0.8s;
+  animation-delay: 2.2s;
 }
 
 .containers--cards:nth-child(9) {
-  animation-delay: 0.9s;
+  animation-delay: 2.5s;
 }
 
 .containers--cards:nth-child(10) {
-  animation-delay: 1s;
+  animation-delay: 2.8s;
 }
 
 /*.rotate
@@ -470,8 +480,6 @@ main img {
 .containers--cards:hover {
   background-color: white;
   box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
-  -webkit-animation: slide-left 0.5s ease-out 1s ;
-  animation: slide-left 0.5s ease-out 1s ;
 }
 
 .containers--cards:active {
@@ -488,6 +496,7 @@ main img {
 
 .containers--cards__text {
   margin: 5px 0 12px 10px;
+  padding-right: 55px;
   font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -496,7 +505,7 @@ main img {
 
 .containers--cards__price {
   position: absolute;
-  margin: 38px 0 0 82%;
+  margin: 38px 0 0 85%;
   font-weight: bold;
 }
 
@@ -524,7 +533,7 @@ main img {
 @media screen and (min-width:578px) {
 
   .lettre {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .top {
@@ -535,7 +544,7 @@ main img {
 @media screen and (min-width:1024px) {
 
   .lettre {
-    font-size: 80px;
+    font-size: 100px;
   }
 
   .select {
@@ -567,6 +576,17 @@ main img {
     margin: 20px auto 20px auto;
     text-align: center;
     padding: 40px;
+  }
+
+  .containers--title {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .containers--title i {
+    font-size: 28px;
+    position: absolute;
+    margin-left: 75%;
   }
 
 
@@ -613,10 +633,6 @@ main img {
 .containers h2 {
   margin: auto;
   width: 120px;
-}
-
-.containers--cards__price {
-  margin: 38px 0 0 25%;
 }
 
 .containers--pack {
