@@ -393,7 +393,7 @@ main img {
   border-radius: 15px;
   box-shadow: 2px 2px 5px #dfdfdf;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   cursor: pointer;
   animation: apparition 2s ease-out forwards;
   overflow: hidden;
@@ -462,7 +462,7 @@ main img {
 
 .containers--cards__check {
   right: 0px;
-  width: 16%;
+  width: 60px;
   height: 100%;
   background: #99E2D0;
   position: absolute;
@@ -484,13 +484,17 @@ main img {
   box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
 }
 
+.containers--cards__texts {
+  transition: transform .6s;
+}
+
 .containers--cards:hover .containers--cards__check {
   transform: translateX(0%);
   transition: 0.6s ease;
 }
 
 .containers--cards:hover .containers--cards__price {
-  transform: translateX(-180%);
+  padding-right: 70px;
   transition: 0.6s ease;
 }
 
@@ -514,8 +518,18 @@ main img {
   box-shadow: inset 4px 4px 4px rgba(80, 80, 80, 0.2);
 }
 
+.containers--cards__texts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .containers--cards__title {
-  margin: 12px 0 0px 10px;
+  margin: 10px 0;
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -523,8 +537,7 @@ main img {
 }
 
 .containers--cards__text {
-  margin: 5px 0 12px 10px;
-  padding-right: 55px;
+  margin: 0 0 10px 0;
   font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -532,8 +545,8 @@ main img {
 }
 
 .containers--cards__price {
-  position: absolute;
-  margin: 38px 0 0 85%;
+  margin: 43px auto 0;
+  padding: 0 15px 0 0;
   font-weight: bold;
   transition: 0.6s ease;
 }
