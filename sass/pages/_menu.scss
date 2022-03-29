@@ -2,6 +2,10 @@ main img {
     width: 100%;
     object-fit: cover;
     max-height: 250px;
+
+    @media screen and (min-width:1024px) {
+      max-height: 400px;
+    }
   }
   
 .containers {
@@ -18,7 +22,12 @@ main img {
         width: 45px;
         margin: 10px 0 0 3.5%;
         padding-bottom: 5px;
-  }
+
+        @media screen and (min-width:1024px) {
+          margin: auto;
+          width: 120px;
+        }
+    }
 }
   
 .containers--title {
@@ -26,10 +35,19 @@ main img {
     align-items: center;
     justify-content: space-between;
     margin: 0 3.5%;
+    @media screen and (min-width:1024px) {
+      margin: 0;
+      justify-content: center;
+    }
 
   i {
     font-size: 25px;
     @include heart;
+    @media screen and (min-width:1024px) {
+      font-size: 28px;
+      position: absolute;
+      margin-left: 75%;
+    }
   }
 }
   
@@ -67,6 +85,10 @@ main img {
     &:active {
         box-shadow: inset 4px 4px 4px rgba(80, 80, 80, 0.2);
     }
+
+    @media screen and (min-width:1024px) {
+      width: 30%;
+    }
 }
 
 @keyframes apparition {
@@ -87,6 +109,16 @@ main img {
       opacity: 1;
       transform: translateY(0px);
     }
+}
+
+.containers--pack {
+  @media screen and (min-width:1024px) {
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+  }
 }
   
   .containers--cards:nth-child(1) {

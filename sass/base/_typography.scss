@@ -17,6 +17,13 @@ $font-family-Shrikhand: 'shrikhand', cursive;
     font-size: 30px;
 }
 
+@media screen and (min-width:578px) {
+
+  .lettre {
+    font-size: 70px;
+  }
+}
+
 .container--card i , .containers--title i{
     font-size: 25px;
 }
@@ -59,122 +66,3 @@ $font-family-Shrikhand: 'shrikhand', cursive;
     font-weight: 100;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (min-width:578px) {
-
-    .lettre {
-      font-size: 70px;
-    }
-  
-    .top {
-      height: 220px;
-    }  
-  }
-
-@media screen and (min-width:1024px) {
-
-    .lettre {
-      font-size: 100px;
-    }
-  
-    .select {
-      display: flex;
-      justify-content: space-between;
-      height: 300px;
-    }
-  
-    .select--buttons {
-      margin: auto 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-    .select--button {
-      width: 30%;
-    }
-  
-    .select h2 {
-      margin: 40px auto 20px auto;
-    }
-  
-    .container {
-      height: 800px;
-    }
-  
-    .container h2 {
-      margin: 20px auto 20px auto;
-      text-align: center;
-      padding: 40px;
-    }
-  
-    .containers--title {
-      margin: 0;
-      justify-content: center;
-    }
-  
-    .containers--title i {
-      font-size: 28px;
-      position: absolute;
-      margin-left: 75%;
-    }
-  
-  
-    .container--card {
-      width: 45%;
-    }
-  
-    .container--cards {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .container--card:active {
-      box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.2);
-      width: 48%;
-      height: 260px;
-    }
-    
-    .footer--logo {
-      display: flex;
-      justify-content: center;
-      padding: 25px 0 20px 0;
-      width: auto;
-    }
-  
-    .footer--ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .footer--ul__li {
-      padding-bottom: 10px;
-    }
-  
-  /************************ media autre page****************************/
-  
-  main img {
-    max-height: 400px;
-  }
-  
-  .containers h2 {
-    margin: auto;
-    width: 120px;
-  }
-  
-  .containers--pack {
-    margin: auto 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-  }
-  
-  .containers--cards {
-    width: 30%;
-  }
-}
