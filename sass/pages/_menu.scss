@@ -1,0 +1,192 @@
+main img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+  }
+  
+.containers {
+    padding-top: 10px;
+    background: $colour-quinary;
+    border-radius: 45px 45px 0 0;
+    position: relative;
+    margin-top: -45px;
+    padding-bottom: 20px;
+
+    h2 {
+        font-size: 18px;
+        border-bottom: solid 3px $colour-tertiary;
+        width: 45px;
+        margin: 10px 0 0 3.5%;
+        padding-bottom: 5px;
+  }
+}
+  
+.containers--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3.5%;
+
+  i {
+    font-size: 25px;
+    @include heart;
+  }
+}
+  
+.containers--cards {
+    background: white;
+    width: 93%;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #dfdfdf;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    animation: apparition 2s ease-out forwards;
+    overflow: hidden;
+    opacity: 0;
+        
+    &hover {
+        background-color: white;
+        box-shadow: 4px 5px 4px rgba(80, 80, 80, 0.12);
+    }
+    &:hover .containers--cards__check {
+        transform: translateX(0%);
+        transition: 0.6s ease;
+      }
+      
+    &:hover .containers--cards__price {
+        padding-right: 70px;
+        transition: 0.6s ease;
+      }
+      
+    &:hover .containers--cards__check i {
+        animation: rotatecheck 0.8s 1 both;
+      }
+    
+    &:active {
+        box-shadow: inset 4px 4px 4px rgba(80, 80, 80, 0.2);
+    }
+}
+
+@keyframes apparition {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    25% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+  
+  .containers--cards:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .containers--cards:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .containers--cards:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+  
+  .containers--cards:nth-child(4) {
+    animation-delay: 1s;
+  }
+  
+  .containers--cards:nth-child(5) {
+    animation-delay: 1.3s;
+  }
+  
+  .containers--cards:nth-child(6) {
+    animation-delay: 1.6s;
+  }
+  
+  .containers--cards:nth-child(7) {
+    animation-delay: 1.9s;
+  }
+  
+  .containers--cards:nth-child(8) {
+    animation-delay: 2.2s;
+  }
+  
+  .containers--cards:nth-child(9) {
+    animation-delay: 2.5s;
+  }
+  
+  .containers--cards:nth-child(10) {
+    animation-delay: 2.8s;
+  }
+  
+.containers--cards__check {
+    right: 0px;
+    width: 60px;
+    height: 100%;
+    background: $colour-tertiary;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: 0.6s ease;
+    border-radius: 0 15px 15px 0;
+}
+  
+.rotate {
+    color: white;
+    font-size: 24px;
+}
+
+  @keyframes rotatecheck {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.containers--cards__texts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: transform .6s;
+}
+  
+.containers--cards__title {
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  
+.containers--cards__text {
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  
+.containers--cards__price {
+    margin: 43px auto 0;
+    padding: 0 15px 0 0;
+    transition: 0.6s ease;
+}

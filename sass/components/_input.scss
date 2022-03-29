@@ -1,0 +1,12 @@
+.localisation {
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2);
+
+    p {
+        margin: 15px 20px;
+        font-weight: bold;
+    }
+}

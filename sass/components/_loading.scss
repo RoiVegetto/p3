@@ -1,0 +1,54 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $colour-quinary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    animation: time 2.5s forwards;
+    opacity: 1;
+  }
+  
+  @keyframes time {
+    0% {
+      opacity: 1;
+      z-index: 3;
+    }
+  
+    90% {
+      opacity: 1;
+      z-index: 3;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .lettre {
+    color: $colour-primary;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+    font-family: shrikhand;
+  }
+  
+  @keyframes flash {
+    0% {
+      color: $colour-primary;
+      text-shadow: 0 0 7px $colour-primary;
+    }
+  
+    50% {
+      color: $colour-secondary;
+      text-shadow: 0 0 7px $colour-secondary;
+    }
+  
+    100% {
+      color: $colour-primary;
+      text-shadow: 0 0 7px $colour-primary;
+    }
+  }

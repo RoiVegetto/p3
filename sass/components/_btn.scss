@@ -1,0 +1,33 @@
+.explore {
+    @include btn;
+    margin: 30px auto;
+    font-size: 15px;
+    padding: 15px 20px;
+
+    a {
+        color: $colour-septenary;
+    }
+        
+    &:hover {
+        box-shadow: 5px 5px 3px rgba(80, 80, 80, 0.2);
+        background-image: linear-gradient(to top, #a561f8, #ffaee8);
+    }
+
+    &:active {
+        box-shadow: inset 5px 5px 4px rgba(80, 80, 80, 0.2),
+                    2px 2px 5px rgba(80, 80, 80, 0.2);
+    }
+}
+
+.order {
+    @include btn;
+    margin: 40px auto;
+    font-size: 17px;
+    padding: 16px 42px;
+  
+  &:hover {
+    box-shadow: 5px 5px 3px rgba(80, 80, 80, 0.2);
+    background-image: linear-gradient(to top, #a561f8, #ffaee8);
+  }
+}
+

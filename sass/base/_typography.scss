@@ -1,0 +1,60 @@
+$font-family-Roboto: 'roboto', sans-serif;
+$font-family-Shrikhand: 'shrikhand', cursive;
+
+/* Font Family */
+
+.footer--logo, .containers--title h1 {
+    font-family: $font-family-Shrikhand;
+}
+
+* {
+    font-family: $font-family-Roboto;
+}
+
+/* Font size */
+
+.lettre, .containers--title h1 {
+    font-size: 30px;
+}
+
+.container--card i , .containers--title i{
+    font-size: 25px;
+}
+
+.title, .select h2, .rotate {
+    font-size: 24px;
+}
+
+.return {
+    font-size: 22px;
+}
+
+.footer--logo {
+    font-size: 20px;
+}
+
+.title-p, .select--button i, .containers h2, .containers--cards__title{
+    font-size: 18px;
+}
+
+.order {
+    font-size: 17px;
+}
+
+.select--button__text {
+    font-size: 16px;
+}
+
+.explore, .container--card__new, .containers--cards__text {
+    font-size: 15px;
+}
+
+/* Font Weight */
+
+.localisation p, .select--button__text, .container--card__new, .container--card__title, .containers--cards__price {
+    font-weight: bold;
+}
+
+.containers--title h1, .containers h2 {
+    font-weight: 100;
+}

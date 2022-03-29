@@ -108,7 +108,7 @@ header {
   padding: 40px 10% 5px 10%;
 }
 
-.title-p {
+.title--p {
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -286,7 +286,7 @@ header {
 }
 
 .fa-heart-o:hover {
-    animation: heart 2000ms ease forwards;
+    animation: heart 3s ease forwards;
     cursor: pointer;
 }
 

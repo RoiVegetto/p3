@@ -1,0 +1,35 @@
+@mixin btn {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(to top, $colour-primary, $colour-secondary);
+    text-decoration-color: $colour-septenary;
+    box-shadow: 3px 3px 5px rgba(80, 80, 80, 0.2);
+    color: $colour-septenary;
+    cursor: pointer;
+}
+
+@mixin heart {
+
+    &:hover {
+    animation: heart 3s ease forwards;
+    cursor: pointer;
+    }
+
+    @keyframes heart {
+        0% {
+            font-weight: 800;
+            background: -webkit-linear-gradient(#9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.1;
+        }
+        100% {
+            font-weight: 800;
+            background: -webkit-linear-gradient(#9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
